@@ -123,3 +123,49 @@ footer {
 .social-icons a:hover {
     color: #00AA8E; 
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .logo {
+    padding-right: 0;
+    height: 50px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-info,
+  .footer-contacto {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .footer-info p {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 1.8em;
+  }
+}
