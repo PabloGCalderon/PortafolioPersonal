@@ -1,0 +1,184 @@
+        .skills-section {
+            width: 100%;
+            max-width: 1200px; 
+            margin: 40px auto; 
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex; 
+            justify-content: center; 
+            gap: 40px; 
+        }
+
+        .skill-category-soft {
+            background-color: #ffffff; 
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            flex: 1;
+            min-width: 300px; 
+            max-width: 550px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .skill-category-hard {
+            background-color: #ffffff; 
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            flex: 1;
+            min-width: 300px; 
+            max-width: 550px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .skill-category-soft:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+        }
+
+        .skill-category-soft  h2 {
+            font-family: 'Nunito', sans-serif; 
+            color: #f54774;
+            font-size: 32px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .skill-category-soft  h2::after { 
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #f54774;
+            border-radius: 2px;
+        }
+                
+
+        .skill-category-hard:hover {
+            transform: translateY(-8px); 
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+        }
+
+        .skill-category-hard h2 {
+            font-family: 'Nunito', sans-serif; 
+            color: rgb(19, 143, 143); 
+            font-size: 32px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .skill-category-hard h2::after { 
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: rgb(0, 170, 142); 
+            border-radius: 2px;
+        }
+
+        .skill-list-soft {
+            padding: 0;
+            margin: 0;
+        }
+
+         .skill-list-hard {
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list-soft li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #505050;
+            padding: 10px 0;
+            border-bottom: 1px solid #747474; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            gap: 15px; 
+        }
+
+        .skill-list-hard li {
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #505050;
+            padding: 10px 0;
+            border-bottom: 1px solid #747474; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            gap: 15px; 
+        }
+
+
+        .skill-list-soft li i {
+            color: #f54774; /* Color de los iconos de habilidad */
+            font-size: 1.3em;
+            min-width: 25px; /* Asegura que los iconos tengan un ancho consistente */
+            text-align: center;
+        }
+
+         .skill-list-hard li i {
+            color: rgb(0, 170, 142); /* Color de los iconos de habilidad */
+            font-size: 1.3em;
+            min-width: 25px; /* Asegura que los iconos tengan un ancho consistente */
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .skills-section {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .skill-category-soft,
+        .skill-category-hard {
+            width: 100%;
+            max-width: 90%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-logo,
+        .footer-info,
+        .footer-contacto {
+            flex: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            padding-left: 0;
+            justify-content: center;
+        }
+        }
